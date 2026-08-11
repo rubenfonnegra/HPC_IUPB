@@ -1,0 +1,1021 @@
+/* ============================= */
+/* GENERAL */
+/* ============================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+  color: #111;
+}
+
+/* ============================= */
+/* SIDEBAR */
+/* ============================= */
+
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #eeeeee;
+  padding: 24px 18px;
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+}
+
+.profile-box {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.profile-img {
+  width: 340px;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.profile-box h2 {
+  font-size: 20px;
+  margin: 8px 0 4px;
+}
+
+.profile-box p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+.menu h3 {
+  margin: 24px 0 8px;
+  font-size: 14px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.menu button,
+.menu a {
+  width: 100%;
+  display: block;
+  text-align: left;
+  padding: 12px 14px;
+  margin-bottom: 6px;
+  border: none;
+  background: transparent;
+  color: #111;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.menu button:hover,
+.menu a:hover {
+  background: #dedede;
+  transform: translateX(4px);
+}
+
+/* ============================= */
+/* MAIN */
+/* ============================= */
+
+.main {
+  margin-left: 280px;
+  padding: 60px 8%;
+  min-height: 100vh;
+}
+
+/* ============================= */
+/* HERO */
+/* ============================= */
+
+.hero {
+  max-width: 980px;
+  margin-bottom: 60px;
+}
+
+.eyebrow {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1.05;
+  margin: 0 0 12px;
+}
+
+.hero h2 {
+  font-size: clamp(22px, 3vw, 34px);
+  margin: 0 0 28px;
+}
+
+.description {
+  max-width: 780px;
+  font-size: 19px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ============================= */
+/* BUTTONS */
+/* ============================= */
+
+.hero-actions,
+.resource-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 22px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid #111;
+}
+
+.btn.primary {
+  background: #111;
+  color: #fff;
+}
+
+.btn.secondary {
+  background: #fff;
+  color: #111;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+/* ============================= */
+/* OVERVIEW */
+/* ============================= */
+
+.overview {
+  max-width: 1100px;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.info-card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+}
+
+.info-card h3 {
+  margin-top: 0;
+}
+
+/* ============================= */
+/* WEEK VIEW */
+/* ============================= */
+
+.week-header {
+  max-width: 950px;
+  margin-bottom: 28px;
+}
+
+.week-badge {
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.week-header h1 {
+  font-size: 44px;
+  margin: 0 0 8px;
+}
+
+.week-header p {
+  color: #555;
+  font-size: 18px;
+}
+
+.markdown-card {
+  max-width: 950px;
+  background: #fff;
+  padding: 34px;
+  border-radius: 16px;
+  border: 1px solid #e7e7e7;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  line-height: 1.7;
+  margin-bottom: 34px;
+}
+
+.markdown-card h1,
+.markdown-card h2,
+.markdown-card h3 {
+  margin-top: 24px;
+}
+
+.markdown-card a {
+  color: #0066cc;
+  font-weight: 700;
+}
+
+.markdown-card code {
+  background: #f0f0f0;
+  padding: 3px 7px;
+  border-radius: 6px;
+}
+
+.markdown-card table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0;
+}
+
+.markdown-card th,
+.markdown-card td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.markdown-card th {
+  background: #f2f2f2;
+}
+
+/* ============================= */
+/* GOOGLE SLIDES VIEWER */
+/* ============================= */
+
+.slides-section {
+  max-width: 1100px;
+  background: #fff;
+  padding: 28px;
+  border-radius: 18px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.07);
+}
+
+.section-title h2 {
+  margin: 0 0 6px;
+  font-size: 28px;
+}
+
+.section-title p {
+  color: #555;
+  margin-top: 0;
+}
+
+.slides-frame-wrapper {
+  width: 100%;
+  margin-top: 22px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #111;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+}
+
+.slides-viewer {
+  width: 100%;
+  height: 620px;
+  border: none;
+  display: block;
+}
+
+/* ============================= */
+/* CONTACT / ERROR */
+/* ============================= */
+
+.contact-card,
+.error-card {
+  max-width: 850px;
+  background: #fff;
+  padding: 36px;
+  border-radius: 18px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.07);
+}
+
+.error-card code {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #f0f0f0;
+  border-radius: 6px;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 900px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .main {
+    margin-left: 0;
+    padding: 32px 20px;
+  }
+
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .slides-viewer {
+    height: 420px;
+  }
+}
+
+/* ============================= */
+/* GOOGLE SPREADSHEET VIEWER */
+/* ============================= */
+
+.spreadsheet-section {
+  max-width: 1100px;
+  background: #fff;
+  padding: 28px;
+  border-radius: 18px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.07);
+  margin-top: 34px;
+}
+
+.spreadsheet-frame-wrapper {
+  width: 100%;
+  margin-top: 22px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+}
+
+.spreadsheet-viewer {
+  width: 100%;
+  height: 620px;
+  border: none;
+  display: block;
+}
+
+/* ============================= */
+/* DROPDOWN WEEKS */
+/* ============================= */
+
+.dropdown {
+  margin-top: 8px;
+  margin-bottom: 18px;
+}
+
+.dropdown summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #ffffff;
+  font-weight: 700;
+  color: #111;
+  border: 1px solid #ddd;
+  transition: all 0.2s ease;
+}
+
+.dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.dropdown summary::after {
+  content: "⬇️";
+  float: right;
+  transition: transform 0.2s ease;
+}
+
+.dropdown[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.dropdown summary:hover {
+  background: #dedede;
+}
+
+.dropdown button {
+  margin-left: 10px;
+  width: calc(100% - 10px);
+}
+
+/* ============================= */
+/* SIDEBAR MAIN BUTTON */
+/* ============================= */
+
+.dropdown-button {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 14px 16px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 14px;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #111;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  margin-bottom: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.dropdown-button:hover {
+  background: #f3f3f3;
+  transform: translateY(-1px);
+}
+/* 
+.book{
+    display:flex;
+    gap:25px;
+    margin:25px 0;
+    padding:20px;
+
+    border-radius:15px;
+
+    background:white;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+    transition:.25s;
+}
+
+.book:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.book img{
+    width:110px;
+    border-radius:8px;
+}
+
+.book-info{
+    flex:1;
+}
+
+.book-info h3{
+    margin-top:0;
+}
+
+.book-info a{
+    display:inline-block;
+    margin-top:10px;
+    text-decoration:none;
+    font-weight:bold;
+} */
+
+/* =======================================================
+   RESOURCE CARDS
+======================================================= */
+/* 
+.resource-card{
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+    margin:18px 0;
+    padding:18px 22px;
+
+    background:#fff;
+
+    border:1px solid #e7e7e7;
+    border-radius:14px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.05);
+
+    transition:.25s;
+}
+
+.resource-card:hover{
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.10);
+
+    border-color:#cfd8dc;
+}
+
+.resource-icon{
+    flex-shrink:0;
+
+    width:58px;
+    height:58px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:30px;
+
+    background:#f4f6f8;
+
+    border-radius:12px;
+}
+
+.resource-content{
+    flex:1;
+}
+
+.resource-content h3{
+    margin:0 0 6px 0;
+    font-size:20px;
+}
+
+.resource-content p{
+    margin:0;
+    color:#666;
+    line-height:1.5;
+}
+
+.resource-content a{
+    text-decoration:none;
+    font-weight:600;
+}
+
+.resource-link{
+    margin-top:10px;
+    display:inline-block;
+} */
+ 
+
+/* ==========================================================
+   COURSE UI KIT
+   Reusable components for Markdown content
+========================================================== */
+
+/* ---------- Base Card ---------- */
+
+.course-card{
+    display:flex;
+    align-items:flex-start;
+    gap:22px;
+
+    margin:22px 0;
+    padding:22px;
+
+    background:#ffffff;
+
+    border:1px solid #e7e7e7;
+    border-left:6px solid #cccccc;
+
+    border-radius:16px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.06);
+
+    transition:all .25s ease;
+}
+
+.course-card:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 24px rgba(0,0,0,.10);
+
+    border-color:#d6d6d6;
+}
+
+/* ---------- Icons ---------- */
+
+.course-icon{
+
+    width:64px;
+    height:64px;
+
+    flex-shrink:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:14px;
+
+    background:#f3f5f7;
+
+    font-size:32px;
+}
+
+/* ---------- Content ---------- */
+
+.course-content{
+
+    flex:1;
+}
+
+.course-content h3{
+
+    margin:0 0 8px 0;
+
+    font-size:22px;
+
+    color:#111;
+}
+
+.course-content h4{
+
+    margin:18px 0 8px 0;
+}
+
+.course-content p{
+
+    margin:0;
+
+    color:#555;
+
+    line-height:1.7;
+}
+
+.course-content ul{
+
+    margin-top:10px;
+}
+
+.course-content a{
+
+    text-decoration:none;
+
+    font-weight:600;
+}
+
+/* ---------- Links ---------- */
+
+.course-links{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:18px;
+}
+
+.course-link{
+
+    display:inline-block;
+
+    padding:8px 16px;
+
+    background:#111;
+
+    color:white !important;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    font-size:14px;
+
+    transition:.2s;
+}
+
+.course-link:hover{
+
+    background:#333;
+}
+
+/* ==========================================================
+   BOOK CARD
+========================================================== */
+
+.book-card{
+
+    border-left-color:#F9A825;
+}
+
+.book-cover{
+
+    width:110px;
+
+    border-radius:8px;
+
+    box-shadow:0 5px 12px rgba(0,0,0,.15);
+}
+
+/* ==========================================================
+   RESOURCE CARD
+========================================================== */
+
+.resource-card{
+
+    border-left-color:#1976D2;
+}
+
+/* ==========================================================
+   PAPER CARD
+========================================================== */
+
+.paper-card{
+
+    border-left-color:#673AB7;
+}
+
+/* ==========================================================
+   NOTEBOOK CARD
+========================================================== */
+
+.notebook-card{
+
+    border-left-color:#43A047;
+}
+
+/* ==========================================================
+   DATASET CARD
+========================================================== */
+
+.dataset-card{
+
+    border-left-color:#0097A7;
+}
+
+/* ==========================================================
+   VIDEO CARD
+========================================================== */
+
+.video-card{
+
+    border-left-color:#E53935;
+}
+
+.video-thumbnail{
+
+    width:180px;
+
+    border-radius:12px;
+}
+
+/* ==========================================================
+   ASSIGNMENT CARD
+========================================================== */
+
+.assignment-card{
+
+    border-left-color:#EF6C00;
+}
+
+/* ==========================================================
+   ACTIVITY CARD
+========================================================== */
+
+.activity-card{
+
+    border-left-color:#00897B;
+}
+
+/* ==========================================================
+   QUIZ CARD
+========================================================== */
+
+.quiz-card{
+
+    border-left-color:#8E24AA;
+}
+
+/* ==========================================================
+   CHECKLIST CARD
+========================================================== */
+
+.checklist-card{
+
+    border-left-color:#546E7A;
+}
+
+/* ==========================================================
+   TIP CARD
+========================================================== */
+
+.tip-card{
+
+    border-left-color:#2E7D32;
+
+    background:#F8FFF8;
+}
+
+/* ==========================================================
+   WARNING CARD
+========================================================== */
+
+.warning-card{
+
+    border-left-color:#D32F2F;
+
+    background:#FFF8F8;
+}
+
+/* ==========================================================
+   INFO CARD
+========================================================== */
+
+.info-card-course{
+
+    border-left-color:#0288D1;
+
+    background:#F8FCFF;
+}
+
+/* ==========================================================
+   SUCCESS CARD
+========================================================== */
+
+.success-card{
+
+    border-left-color:#43A047;
+
+    background:#F8FFF8;
+}
+
+/* ==========================================================
+   QUESTION CARD
+========================================================== */
+
+.question-card{
+
+    border-left-color:#5E35B1;
+}
+
+/* ==========================================================
+   CODE CARD
+========================================================== */
+
+.code-card{
+
+    border-left-color:#37474F;
+
+    background:#FAFAFA;
+}
+
+/* ==========================================================
+   DOWNLOAD CARD
+========================================================== */
+
+.download-card{
+
+    border-left-color:#1565C0;
+}
+
+/* ==========================================================
+   EXTERNAL LINK CARD
+========================================================== */
+
+.external-card{
+
+    border-left-color:#00838F;
+}
+
+/* ==========================================================
+   IMAGE CARD
+========================================================== */
+
+.image-card{
+
+    border-left-color:#6D4C41;
+}
+
+.image-card img{
+
+    width:220px;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 12px rgba(0,0,0,.15);
+}
+
+/* ==========================================================
+   BADGES
+========================================================== */
+
+.badge{
+
+    display:inline-block;
+
+    padding:5px 10px;
+
+    margin:4px 4px 4px 0;
+
+    border-radius:999px;
+
+    background:#eeeeee;
+
+    font-size:13px;
+
+    font-weight:600;
+}
+
+.badge-blue{
+
+    background:#E3F2FD;
+}
+
+.badge-green{
+
+    background:#E8F5E9;
+}
+
+.badge-yellow{
+
+    background:#FFF8E1;
+}
+
+.badge-red{
+
+    background:#FFEBEE;
+}
+
+.badge-purple{
+
+    background:#F3E5F5;
+}
+
+/* ==========================================================
+   CALLOUTS
+========================================================== */
+
+.callout{
+
+    margin:18px 0;
+
+    padding:18px;
+
+    border-radius:12px;
+
+    background:#F5F5F5;
+
+    border-left:5px solid #1976D2;
+}
+
+.callout h4{
+
+    margin-top:0;
+}
+
+/* ==========================================================
+   TABLE IMPROVEMENTS
+========================================================== */
+
+.markdown-card table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin:20px 0;
+}
+
+.markdown-card th{
+
+    background:#f4f4f4;
+
+    padding:12px;
+
+    text-align:left;
+}
+
+.markdown-card td{
+
+    padding:12px;
+
+    border-bottom:1px solid #e8e8e8;
+}
+
+/* ==========================================================
+   IMAGES INSIDE MARKDOWN
+========================================================== */
+
+.markdown-card img{
+
+    max-width:100%;
+
+    border-radius:10px;
+
+    margin:16px 0;
+}

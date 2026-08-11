@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>High Performance Computing - IUPB</title>
+   <!-- <link rel="icon" type="image/png" href="Images/icon.png"> -->
+   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Markdown parser -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ============================= -->
+  <!-- SIDEBAR -->
+  <!-- ============================= -->
+  <aside class="sidebar">
+
+    <div class="profile-box">
+      <img src="Images/iupb_logo.png" alt="Logo" class="profile-img">
+      <h1> ⚡</h1><h1> High Performance Computing</h1>
+      <b>Repositorio del curso</b>
+    </div>
+
+    <nav class="menu">
+      <!-- <button onclick="loadHome()">🏠 Inicio</button> -->
+       <button class="dropdown-button" onclick="loadHome()"> <span>🏠 Inicio </span> </button>
+
+      <!-- <h3>📚 Semanas</h3> -->
+
+      <details class="dropdown" closed>
+        <summary> 📚 Semanas </summary>
+
+        <!-------------------------------------->
+        <!-------------- Sem 01 ---------------->
+        <!-------------------------------------->
+
+        <button onclick="loadWeek({
+        title: 'Semana 1',
+        mdFile: 'Sem_01/README.md',
+        
+        
+        // slidesURL: 'https://docs.google.com/presentation/d/19iYqSpoWFKKtKuYNwgYlGjoiJj5-9pqZ/edit?usp=sharing&ouid=107921194674515097266&rtpof=true&sd=true',
+
+        notebooks: [
+            {
+            label: 'Notebook: Introducción a HPC y benchmarking',
+            url: 'https://github.com/rubenfonnegra/high_performance_computing/blob/master/Sem_01/python_fundamentals.ipynb'
+            },
+            {
+            label: 'Notebook: Vectorización y rendimiento con NumPy',
+            url: 'https://github.com/rubenfonnegra/high_performance_computing/blob/master/Sem_01/image_processing_basics.ipynb'
+            },
+            // {
+            // label: 'Notebook 3: Imágenes',
+            // url: 'Sem_01/notebook_03.ipynb'
+            // }
+        ],
+
+        spreadsheetURL: 'https://docs.google.com/spreadsheets/d/1adB82Mwm8eckA8U-E-lP9nRVyQs9x11J/edit?usp=sharing&ouid=107921194674515097266&rtpof=true&sd=true',
+        spreadsheetOpenURL: 'https://docs.google.com/spreadsheets/d/1adB82Mwm8eckA8U-E-lP9nRVyQs9x11J/edit?usp=sharing&ouid=107921194674515097266&rtpof=true&sd=true'
+        })">
+        Sem 01
+        </button>
+
+        <!-------------------------------------->
+        <!-------------- Sem 02 ---------------->
+        <!-------------------------------------->
+
+        <button onclick="loadWeek({
+        title: 'Semana 2',
+        mdFile: 'Sem_02/README.md',
+
+        slidesURL: 'https://docs.google.com/presentation/d/1tCTj5a8AfKZj7oHAqjRACo4vCvkp0sbs/edit?usp=sharing&ouid=107921194674515097266&rtpof=true&sd=true',
+
+        notebooks: [
+            {
+            label: 'Notebook: Procesos, hilos y concurrencia',
+            url: 'https://github.com/rubenfonnegra/high_performance_computing/blob/master/Sem_02/Desicion_tree.ipynb'
+            },
+            {
+            label: 'Notebook: Multiprocessing en Python',
+            url: 'https://github.com/rubenfonnegra/high_performance_computing/blob/master/Sem_02/Desicion_tree.ipynb'
+            }
+        ],
+
+        // spreadsheetURL: 'https://docs.google.com/spreadsheets/d/1adB82Mwm8eckA8U-E-lP9nRVyQs9x11J/edit?usp=sharing&ouid=107921194674515097266&rtpof=true&sd=true',
+        // spreadsheetOpenURL: 'https://docs.google.com/spreadsheets/d/1adB82Mwm8eckA8U-E-lP9nRVyQs9x11J/edit?usp=sharing&ouid=107921194674515097266&rtpof=true&sd=true'
+        })">
+        Sem 02
+        </button>
+
+        <!-------------------------------------->
+        <!-------------- Sem 03 ---------------->
+        <!-------------------------------------->
+
+        <button onclick="loadWeek({
+        title: 'Semana 3',
+        mdFile: 'Sem_03/README.md',
+
+        slidesURL: 'https://docs.google.com/presentation/d/1O0wkVH6een6Y-NjtPLtH82ksigNLq58_/edit?usp=drive_link&ouid=107921194674515097266&rtpof=true&sd=true',
+
+        notebooks: [
+            {
+            label: 'Notebook: Programación paralela con OpenMP',
+            url: 'https://github.com/rubenfonnegra/high_performance_computing/blob/master/Sem_03/knn_linear_svm.ipynb'
+            }
+        ],
+        })">
+        Sem 03
+        </button>
+
+        <!-------------------------------------->
+        <!-------------- Sem 04 ---------------->
+        <!-------------------------------------->
+
+        <button onclick="loadWeek({
+        title: 'Semana 4',
+        mdFile: 'Sem_04/README.md',
+
+        slidesURL: 'https://docs.google.com/presentation/d/1_pb5-j9c1EVFN5li2GvUQwE92EfVjgL7/edit?usp=sharing&ouid=107921194674515097266&rtpof=true&sd=true',
+
+        notebooks: [
+            {
+            label: 'Notebook: Memoria, caché y locality',
+            url: 'https://github.com/rubenfonnegra/high_performance_computing/blob/master/Sem_04/svm_kernel_trick.ipynb'
+            },
+            {
+            label: 'Notebook: Optimización y profiling',
+            url: 'https://github.com/rubenfonnegra/high_performance_computing/blob/master/Sem_04/linear_regression.ipynb'
+            }
+        ],
+        })">
+        Sem 04
+        </button>
+
+        <!-------------------------------------->
+        <!-------------- Sem 05 ---------------->
+        <!-------------------------------------->
+
+        <button onclick="loadWeek({
+        title: 'Semana 5',
+        mdFile: 'Sem_05/README.md',
+
+        slidesURL: 'https://docs.google.com/presentation/d/1OVjQGPU9OcgmstoGPDP0vqn6gcp9oNjt/edit?usp=drive_link&ouid=107921194674515097266&rtpof=true&sd=true',
+
+        notebooks: [
+            {
+            label: 'Notebook: Fundamentos de GPU y CUDA',
+            url: 'https://github.com/rubenfonnegra/high_performance_computing/blob/master/Sem_05/SVR.ipynb'
+            },
+            {
+            label: 'Notebook: CuPy y aceleración de arrays',
+            url: 'https://github.com/rubenfonnegra/high_performance_computing/blob/master/Sem_05/validation_and_metrics.ipynb'
+            }
+        ],
+        })">
+        Sem 05
+        </button>
+
+        <!-------------------------------------->
+        <!-------------- Sem 06 ---------------->
+        <!-------------------------------------->
+
+        <button onclick="loadWeek({
+        title: 'Semana 6',
+        mdFile: 'Sem_06/README.md',
+
+        slidesURL: 'https://docs.google.com/presentation/d/1RzlP3d-LHEj-lLCB0p2HYEKUX9gS7i_i/edit?usp=sharing&ouid=107921194674515097266&rtpof=true&sd=true',
+
+        notebooks: [
+            {
+            label: 'Notebook: HPC para cargas de IA',
+            url: 'https://github.com/rubenfonnegra/high_performance_computing/blob/master/Sem_06/kmeans_clustering_f.ipynb'
+            }
+        ],
+        })">
+        Sem 06
+        </button>
+
+        
+        
+
+      </details>
+
+
+      <details class="dropdown" closed>
+        <summary> 📦 Recursos </summary>
+
+          <button onclick="loadOnlyMD({
+            title: 'Recursos adicionales',
+            mdFile: 'Resources/README.md',
+          })">
+          Recursos adicionales
+          </button>
+
+
+      </details>
+
+    
+      <!-- <h3>🔗 Enlaces</h3> -->
+      
+      <details class="dropdown" closed>
+        <summary> 🔗 Enlaces </summary>
+
+      <!-- <a href="https://github.com/rubenfonnegra/high_performance_computing" target="_blank"> GitHub Repo </a> -->
+      <button onclick="openExternal('https://github.com/rubenfonnegra/high_performance_computing')"> GitHub Repo </button>
+      <button onclick="openExternal('https://meet.google.com/hqv-uvsq-isc')"> Meet </button>
+      <button onclick="loadContact()">Contacto</button>
+      </details>
+    </nav>
+
+  </aside>
+
+  <!-- ============================= -->
+  <!-- MAIN CONTENT -->
+  <!-- ============================= -->
+  <main class="main">
+    <div id="content"></div>
+  </main>
+
+  <!-- ============================= -->
+  <!-- JAVASCRIPT -->
+  <!-- ============================= -->
+  <script>
+
+    function loadHome() {
+      document.getElementById("content").innerHTML = `
+        <section class="hero">
+          <p class="eyebrow">Hola! 👋</p>
+
+          <h1>Curso High Performance Computing</h1>
+          <h1>IUPB</h1>
+
+          <h2>Arquitecturas paralelas, programación de alto rendimiento y cómputo para IA</h2>
+
+          <p class="description">
+            En este espacio encontrarás los contenidos del curso organizados por semanas: fundamentos de HPC, arquitecturas paralelas, programación concurrente, aceleración con GPU, optimización de código y aplicaciones de alto rendimiento para inteligencia artificial.
+          </p>
+
+          <div class="hero-actions">
+            
+            <a class="btn primary" href="https://github.com/rubenfonnegra/high_performance_computing" target="_blank">
+              Ver repositorio
+            </a>
+
+            <a class="btn secondary" href="https://classroom.google.com/" target="_blank">
+              Classroom
+            </a>
+            <a class="btn secondary" href="https://sicau.pascualbravo.edu.co/SICAU/Account/Login" target="_blank">
+              SICAU
+            </a>
+          </div>
+        </section>
+
+        <section class="overview">
+          <h2>🧭 ¿Cómo usar esta página?</h2>
+
+          <div class="overview-grid">
+            <div class="info-card">
+              <h3>1. Lee las guías</h3>
+              <p>Revisa la guía de cada semana antes de la sesión e identifica los conceptos, comandos y prácticas que se trabajarán.</p>
+            </div>
+
+            <div class="info-card">
+              <h3>2. Mira los slides</h3>
+              <p>Consulta las presentaciones para estudiar arquitecturas, modelos de paralelismo, optimización y casos de uso.</p>
+            </div>
+
+            <div class="info-card">
+              <h3>3. Abre los notebooks</h3>
+              <p>Ejecuta los notebooks y prácticas para medir rendimiento, paralelizar código y comparar estrategias de optimización.</p>
+            </div>
+          </div>
+        </section>
+      `;
+    }
+
+    function loadWeek({ title, mdFile, slidesURL, notebookURL, notebooks, spreadsheetURL, spreadsheetOpenURL }) {
+        fetch(mdFile)
+        .then(response => {
+            if (!response.ok) {
+            throw new Error("No se pudo cargar el Markdown");
+            }
+            return response.text();
+        })
+        .then(text => {
+
+            const notebookList = notebooks || [
+            {
+                label: "Abrir Notebook",
+                url: notebookURL
+            }
+            ];
+
+            const notebookButtons = notebookList
+            .filter(item => item && item.url)
+            .map(item => `
+                <a class="btn primary" href="${item.url}" target="_blank">
+                💻 ${item.label}
+                </a>
+            `)
+            .join("");
+
+            const spreadsheetSection = spreadsheetURL ? `
+            <section class="spreadsheet-section">
+                <div class="section-title">
+                <h2>📄 Spreadsheet</h2>
+                <p> </p>
+                </div>
+
+                <div class="spreadsheet-frame-wrapper">
+                <iframe 
+                    class="spreadsheet-viewer"
+                    src="${spreadsheetURL}">
+                </iframe>
+                </div>
+
+                <div class="resource-buttons">
+                <a class="btn secondary" href="${spreadsheetOpenURL}" target="_blank">
+                    🔗 Abrir Spreadsheet
+                </a>
+                </div>
+            </section>
+            ` : "";
+            
+            const notebooksSection = notebookButtons ? `
+            <section class="slides-section">
+
+                <div class="section-title">
+                    <h2>💻 Notebooks</h2>
+                    <p>Material práctico de la semana.</p>
+                </div>
+
+                <div class="resource-buttons">
+                    ${notebookButtons}
+                </div>
+
+            </section>
+            ` : "";
+
+            const slidesSection = slidesURL ? `
+            <section class="slides-section">
+
+                <div class="section-title">
+                    <h2>📊 Presentación</h2>
+                </div>
+
+                <div class="slides-frame-wrapper">
+
+                    <iframe
+                        class="slides-viewer"
+                        src="${slidesURL}"
+                        allowfullscreen="true"
+                        mozallowfullscreen="true"
+                        webkitallowfullscreen="true">
+                    </iframe>
+
+                </div>
+
+                <div class="resource-buttons">
+
+                    <a class="btn secondary"
+                      href="${slidesURL}"
+                      target="_blank">
+
+                        🔗 Abrir Slides
+
+                    </a>
+
+                </div>
+
+                
+
+            </section>
+            ` : "";
+
+            document.getElementById("content").innerHTML = `
+            <section class="week-header">
+                <span class="week-badge">📚 ${title}</span>
+                <h1>${title}</h1>
+                <p>Contenido, presentación, notebooks y recursos de trabajo.</p>
+            </section>
+
+            <section class="markdown-card">
+                ${marked.parse(text)}
+            </section>
+
+            ${slidesSection}
+
+            ${notebooksSection}
+
+            ${spreadsheetSection}
+            `;
+
+            window.scrollTo(0, 0);
+        })
+        .catch(error => {
+            document.getElementById("content").innerHTML = `
+            <section class="error-card">
+                <h2>⚠️ Error al cargar la semana</h2>
+                <p>Revisa que el archivo exista en la ruta:</p>
+                <code>${mdFile}</code>
+            </section>
+            `;
+        });
+    }
+    
+    function loadOnlyMD({ title, mdFile }) {
+    fetch(mdFile)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("No se pudo cargar el Markdown");
+        }
+        return response.text();
+      })
+      .then(text => {
+        document.getElementById("content").innerHTML = `
+          <section class="week-header">
+            <span class="week-badge">📄 ${title}</span>
+            <h1>${title}</h1>
+            <p>Contenido cargado desde archivo Markdown.</p>
+          </section>
+
+          <section class="markdown-card">
+            ${marked.parse(text)}
+          </section>
+        `;
+
+        window.scrollTo(0, 0);
+      })
+      .catch(error => {
+        document.getElementById("content").innerHTML = `
+          <section class="error-card">
+            <h2>⚠️ Error al cargar el contenido</h2>
+            <p>Revisa que el archivo exista en la ruta:</p>
+            <code>${mdFile}</code>
+          </section>
+        `;
+      });
+  }
+
+    function loadContact() {
+      document.getElementById("content").innerHTML = `
+        <section class="contact-card">
+          <h1>Contacto</h1>
+          <h3><strong>Profesor:</strong> Ruben D. Fonnegra</h3>
+          <p><strong>Email:</strong> <a href="mailto:ruben.fonnegra@pascualbravo.edu.co">ruben.fonnegra@pascualbravo.edu.co</a></p>
+          <p><strong>Website:</strong> <a href="https://rubenfonnegra.github.io/" target="_blank">https://rubenfonnegra.github.io/</a></p>
+
+          <div class="resource-buttons">
+            <a class="btn primary" href="mailto:ruben.fonnegra@pascualbravo.edu.co">Enviar email</a>
+            <a class="btn secondary" href="https://github.com/rubenfonnegra" target="_blank">GitHub</a>
+          </div>
+        </section>
+      `;
+    }
+    
+    function openExternal(url) {
+      window.open(url, "_blank");
+    }
+
+    loadHome();
+
+  </script>
+
+</body>
+</html>
