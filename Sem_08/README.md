@@ -1,7 +1,7 @@
 # 🧠 Week 9: How Do We Move and Process Data Efficiently?
 
-<span class="badge badge-blue">🧠 Memory Systems</span>  
-<span class="badge badge-green">📦 Batching</span>  
+<span class="badge badge-blue">🧠 Memory Systems</span>
+<span class="badge badge-green">📦 Batching</span>
 <span class="badge badge-purple">📊 High-Dimensional Data</span>
 
 ## 🎯 Objectives
@@ -36,7 +36,7 @@ The reason is simple:
 
 A typical computational pipeline involves several stages:
 
-```text
+```
 STORAGE
    ↓
 RAM
@@ -46,3 +46,4 @@ CACHE
 CPU / GPU
    ↓
 COMPUTATION
+```
